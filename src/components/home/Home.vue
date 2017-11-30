@@ -2,6 +2,7 @@
   <div>
     <location/>
     <search/>
+    <classify/>
     <ads/>
   </div>
 </template>
@@ -10,6 +11,8 @@
   import Location from '@/components/home/Location'
   import Search from '@/components/home/Search'
   import Ads from '@/components/home/Ads'
+  import Classify from '@/components/home/Classify'
+
   export default {
     name: "Home",
     data() {
@@ -20,7 +23,8 @@
     components: {
       Location,
       Search,
-      Ads
+      Ads,
+      Classify
     }
   };
 </script>

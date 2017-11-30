@@ -2,7 +2,7 @@
   <div id="app">
     <el-container>
       <el-header>点餐平台</el-header>
-      <el-main  v-loading="false">
+      <el-main v-loading="false">
         <router-view/>
       </el-main>
       <el-footer>
@@ -22,7 +22,8 @@
   }
 </script>
 
-<style>
+<style >
+
   .el-header,
   .el-footer {
     background-color: #B3C0D1;

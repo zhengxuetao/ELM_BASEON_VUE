@@ -4,6 +4,8 @@
     <search/>
     <classify/>
     <ads/>
+    <better/>
+    <seller/>
   </div>
 </template>
 
@@ -12,6 +14,8 @@
   import Search from '@/components/home/Search'
   import Ads from '@/components/home/Ads'
   import Classify from '@/components/home/Classify'
+  import Better from '@/components/home/Better'
+  import Seller from '@/components/home/Seller'
 
   export default {
     name: "Home",
@@ -24,7 +28,9 @@
       Location,
       Search,
       Ads,
-      Classify
+      Classify,
+      Better,
+      Seller
     }
   };
 </script>

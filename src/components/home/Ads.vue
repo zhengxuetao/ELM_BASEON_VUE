@@ -19,11 +19,9 @@
         name: 'Ads',
         data() {
             return {
-                ads_url: ''
             }
         },
         mounted() {
-            this.ads_url = require('../../../static/img/ads.png');
         }
     }
 </script>

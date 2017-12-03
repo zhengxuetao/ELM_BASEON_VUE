@@ -4,6 +4,8 @@ import Home from '@/components/home/Home'
 import New from '@/components/new/New'
 import Order from '@/components/order/Order'
 import My from '@/components/my/My'
+import ShopList from '@/components/shop/ShopList'
+import Shop from '@/components/shop/Shop'
 
 Vue.use(Router)
 
@@ -25,6 +27,14 @@ export default new Router({
       path: '/my',
       name: 'My',
       component: My
+    }, {
+      path: '/shopList',
+      name: 'ShopList',
+      component: ShopList
+    }, {
+      path: '/shop',
+      name: 'Shop',
+      component: Shop
     }
   ]
 })

@@ -1,0 +1,66 @@
+[
+    {
+        "name": "美食",
+        "img": "static/img/1.png"
+    },
+    {
+        "name": "晚餐",
+        "img": "static/img/2.png"
+    },
+    {
+        "name": "超市",
+        "img": "static/img/3.png"
+    },
+    {
+        "name": "早餐",
+        "img": "static/img/4.png"
+    },
+    {
+        "name": "生鲜",
+        "img": "static/img/5.png"
+    },
+    {
+        "name": "新店",
+        "img": "static/img/6.png"
+    },
+    {
+        "name": "折扣",
+        "img": "static/img/7.png"
+    },
+    {
+        "name": "糕点",
+        "img": "static/img/8.png"
+    },
+    {
+        "name": "甜品",
+        "img": "static/img/1.png"
+    },
+    {
+        "name": "医药",
+        "img": "static/img/2.png"
+    },
+    {
+        "name": "鲜花",
+        "img": "static/img/3.png"
+    },
+    {
+        "name": "麻辣烫",
+        "img": "static/img/4.png"
+    },
+    {
+        "name": "披萨",
+        "img": "static/img/5.png"
+    },
+    {
+        "name": "面食",
+        "img": "static/img/6.png"
+    },
+    {
+        "name": "小吃",
+        "img": "static/img/7.png"
+    },
+    {
+        "name": "准时达",
+        "img": "static/img/8.png"
+    }
+]

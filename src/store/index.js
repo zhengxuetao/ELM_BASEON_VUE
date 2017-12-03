@@ -7,7 +7,7 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   // 定义状态
   state: {
-    author: 'Wise Wrong'
+    title: '点餐平台'
   },
   mutations: {
     changeAuthor: function (state, newValue) {

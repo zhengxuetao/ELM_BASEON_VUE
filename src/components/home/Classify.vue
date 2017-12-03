@@ -1,101 +1,14 @@
 <template>
     <div class="content">
         <el-carousel height="150px">
-            <el-carousel-item>
+            <el-carousel-item v-for="page in totalPage" :key="page">
                 <el-row :gutter="20">
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/1.png" alt="" />
+                    <el-col :span="6" v-for="(item, index) in data" :key="item.name"
+                     v-if="index >= (page - 1) * pageSize && index < page * pageSize ">
+                        <router-link :to="{name: 'ShopList', query:{searchKey:item.name}}">
+                            <img :src="item.img" alt="" />
                         </router-link>
-                        <p style="margin:0 0;">美食</p>
-                    </el-col>
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/2.png" alt="" />
-                        </router-link>
-                        <p style="margin:0 0;">晚餐</p>
-                    </el-col>
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/3.png" alt="" />
-                        </router-link>
-                        <p style="margin:0 0;">超市</p>
-                    </el-col>
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/4.png" alt="" />
-                        </router-link>
-                        <p style="margin:0 0;">早餐</p>
-                    </el-col>
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/5.png" alt="" />
-                        </router-link>
-                        <p style="margin:0 0;">生鲜</p>
-                    </el-col>
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/6.png" alt="" />
-                        </router-link>
-                        <p style="margin:0 0;">新店</p>
-                    </el-col>
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/7.png" alt="" />
-                        </router-link>
-                        <p style="margin:0 0;">折扣</p>
-                    </el-col>
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/8.png" alt="" />
-                        </router-link>
-                        <p style="margin:0 0;">糕点</p>
-                    </el-col>
-                </el-row>
-            </el-carousel-item>
-            <el-carousel-item>
-                <el-row :gutter="20">
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/1.png" alt="" />
-                        </router-link>
-                    </el-col>
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/2.png" alt="" />
-                        </router-link>
-                    </el-col>
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/3.png" alt="" />
-                        </router-link>
-                    </el-col>
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/4.png" alt="" />
-                        </router-link>
-                    </el-col>
-                </el-row>
-                <el-row :gutter="20">
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/5.png" alt="" />
-                        </router-link>
-                    </el-col>
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/6.png" alt="" />
-                        </router-link>
-                    </el-col>
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/7.png" alt="" />
-                        </router-link>
-                    </el-col>
-                    <el-col :span="6">
-                        <router-link to="/order">
-                            <img src="static/img/8.png" alt="" />
-                        </router-link>
+                        <p style="margin:0 0;">{{item.name}}</p>
                     </el-col>
                 </el-row>
             </el-carousel-item>
@@ -104,10 +17,24 @@
 </template>
 
 <script>
+    import axios from 'axios'
     export default {
         name: 'Classify',
         data() {
-            return {}
+            return {
+                data: [],
+                totalPage: 1,
+                pageSize: 8
+            }
+        },
+        mounted() {
+            axios.get('static/data/classify.json').then((res) => {
+                this.data = res.data;
+                this.totalPage = this.data.length / this.pageSize;
+                if(this.data.length % this.pageSize !== 0) {
+                    this.totalPage += 1;
+                }
+            });
         }
     }
 </script>

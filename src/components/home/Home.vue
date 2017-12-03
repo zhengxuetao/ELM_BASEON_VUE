@@ -1,7 +1,7 @@
 <template>
   <div>
     <location/>
-    <search/>
+    <search :routerName="'ShopList'"/>
     <classify/>
     <ads/>
     <better/>
@@ -16,7 +16,6 @@
   import Classify from '@/components/home/Classify'
   import Better from '@/components/home/Better'
   import Seller from '@/components/home/Seller'
-
   export default {
     name: "Home",
     data() {
@@ -31,6 +30,9 @@
       Classify,
       Better,
       Seller
+    },
+    created() {
+        this.$store.state.title = '点餐平台';
     }
   };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <el-container>
-      <el-header>点餐平台</el-header>
+      <el-header>{{this.$store.state.title}}</el-header>
       <el-main v-loading="false">
         <router-view/>
       </el-main>
@@ -16,14 +16,18 @@
   import foot from '@/components/common/Footer'
   export default {
     name: 'app',
+    data() {
+      return {
+        title: this.$store.state.title
+      }
+    },
     components: {
       foot
     }
   }
 </script>
 
-<style >
-
+<style>
   .el-header,
   .el-footer {
     background-color: #B3C0D1;

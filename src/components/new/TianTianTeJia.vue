@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <el-row :gutter="20">
-            <el-col :span="8" offset="8">
+            <el-col :span="8" :offset="8">
                 <img style="height:20px;" src="static/img/38.png" alt="" />
             </el-col>
         </el-row>

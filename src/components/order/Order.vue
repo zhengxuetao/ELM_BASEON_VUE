@@ -24,7 +24,7 @@
                     </el-col>
                 </el-row>
                 <el-row>
-                    <el-col :span="8" offset="10">
+                    <el-col :span="8" :offset="10">
                         <router-link to="/">
                             <el-button size="mini" plain>再来一单</el-button>
                         </router-link>

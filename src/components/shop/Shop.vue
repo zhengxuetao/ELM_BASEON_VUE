@@ -1,22 +1,42 @@
 <template>
     <div class="content">
+        <ShopHeader :shop="shop"/>
+        <el-row :gutter="20">
+            <el-col :span="8">
+                <router-link to="/shop/goods">商品</router-link>
+            </el-col>
+            <el-col :span="8">
+                <router-link to="/shop/discuss">评价</router-link>
+            </el-col>
+            <el-col :span="8">
+                <router-link to="/shop/detail">商家</router-link>
+            </el-col>
+            <router-view/>
+        </el-row>
     </div>
 </template>
 
 <script>
+    import axios from 'axios'
+    import ShopHeader from '@/components/shop/ShopHeader'
     export default {
         name: 'Shop',
         data() {
             return {
-                a: 1
+                shop: {}
             }
+        },
+        components: {
+            ShopHeader
+        },
+        created() {
+            axios.get('static/data/shop.json').then((res) => {
+                this.shop = res.data[0];
+            });
         }
     }
 </script>
 
-<style>
-    .el-icon-star-on {
-        font-size: 4px;
-        margin-right: 0px;
-    }
+<style scoped>
+
 </style>

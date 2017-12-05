@@ -1,0 +1,18 @@
+[{
+  "logo": "static/img/41.png",
+  "name": "真功夫",
+  "id": 1,
+  "goods": [{
+    "classify": {
+      "classifyName": "",
+      "goods": [{
+        "id": "",
+        "name": "",
+        "price": "",
+        "count": "",
+        "rate": "",
+        "img":""
+      }]
+    }
+  }]
+}]

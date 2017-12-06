@@ -6,6 +6,7 @@ import Order from '@/components/order/Order'
 import My from '@/components/my/My'
 import ShopList from '@/components/shop/ShopList'
 import Shop from '@/components/shop/Shop'
+import Goods from '@/components/shop/Goods'
 
 Vue.use(Router)
 
@@ -34,7 +35,22 @@ export default new Router({
     }, {
       path: '/shop',
       name: 'Shop',
-      component: Shop
+      component: Shop,
+      children: [
+        {
+          path: 'goods',
+          name: 'Goods',
+          component: Goods
+        }, {
+          path: 'discuss',
+          name: 'Discuss',
+          component: Goods
+        }, {
+          path: 'detail',
+          name: 'Detail',
+          component: Goods
+        }
+      ]
     }
   ]
 })

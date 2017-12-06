@@ -14,9 +14,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "better-scroll": "^1.5.5",
     "element-ui": "^2.0.6",
-    "stylus": "^0.54.5",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
@@ -77,8 +75,6 @@
     "shelljs": "^0.7.6",
     "sinon": "^4.0.0",
     "sinon-chai": "^2.8.0",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",

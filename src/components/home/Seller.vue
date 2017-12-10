@@ -7,7 +7,7 @@
                 </div>
             </el-col>
         </el-row>
-        <router-link :to="{name: 'Shop', query:{searchKey:'better'}}">
+        <router-link :to="{name: 'Goods', query:{id:'1'}}">
             <el-row :gutter="20">
                 <el-col :span="8">
                     <img src="static/img/21.png" alt="" />

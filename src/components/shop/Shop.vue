@@ -11,7 +11,7 @@
             <el-col :span="8">
                 <router-link to="/shop/detail">商家</router-link>
             </el-col>
-            <router-view/>
+            <router-view style="margin-top:30px;"/>
         </el-row>
     </div>
 </template>
@@ -38,5 +38,4 @@
 </script>
 
 <style scoped>
-
 </style>

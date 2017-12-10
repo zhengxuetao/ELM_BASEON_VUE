@@ -1,18 +1,129 @@
-[{
-  "logo": "static/img/41.png",
-  "name": "真功夫",
-  "id": 1,
-  "goods": [{
-    "classify": {
-      "classifyName": "",
-      "goods": [{
-        "id": "",
-        "name": "",
-        "price": "",
-        "count": "",
-        "rate": "",
-        "img":""
-      }]
-    }
-  }]
-}]
+[
+  {
+    "logo": "static/img/41.png",
+    "name": "真功夫",
+    "id": 1,
+    "goods": [
+      {
+        "classifyName": "热销",
+        "classifyId": 1,
+        "goods": [
+          {
+            "id": "1",
+            "name": "超值双人套餐",
+            "price": "54",
+            "count": "333",
+            "rate": "90",
+            "img": "static/img/41.png"
+          },
+          {
+            "id": "2",
+            "name": "栗子鸡",
+            "price": "20",
+            "count": "333",
+            "rate": "90",
+            "img": "static/img/41.png"
+          },
+          {
+            "id": "3",
+            "name": "双拼套餐配烫",
+            "price": "20",
+            "count": "333",
+            "rate": "90",
+            "img": "static/img/41.png"
+          }
+        ]
+      },
+      {
+        "classifyName": "优惠",
+        "classifyId": 2,
+        "goods": [
+          {
+            "id": "1",
+            "name": "超值双人套餐",
+            "price": "54",
+            "count": "333",
+            "rate": "90",
+            "img": "static/img/41.png"
+          },
+          {
+            "id": "2",
+            "name": "栗子鸡",
+            "price": "20",
+            "count": "333",
+            "rate": "90",
+            "img": "static/img/41.png"
+          },
+          {
+            "id": "3",
+            "name": "双拼套餐配烫",
+            "price": "20",
+            "count": "333",
+            "rate": "90",
+            "img": "static/img/41.png"
+          }
+        ]
+      },
+      {
+        "classifyName": "特价",
+        "classifyId": 3,
+        "goods": [
+          {
+            "id": "1",
+            "name": "超值双人套餐",
+            "price": "54",
+            "count": "333",
+            "rate": "90",
+            "img": "static/img/41.png"
+          },
+          {
+            "id": "2",
+            "name": "栗子鸡",
+            "price": "20",
+            "count": "333",
+            "rate": "90",
+            "img": "static/img/41.png"
+          },
+          {
+            "id": "3",
+            "name": "双拼套餐配烫",
+            "price": "20",
+            "count": "333",
+            "rate": "90",
+            "img": "static/img/41.png"
+          }
+        ]
+      },
+      {
+        "classifyName": "套餐",
+        "classifyId": 4,
+        "goods": [
+          {
+            "id": "1",
+            "name": "超值双人套餐",
+            "price": "54",
+            "count": "333",
+            "rate": "90",
+            "img": "static/img/41.png"
+          },
+          {
+            "id": "2",
+            "name": "栗子鸡",
+            "price": "20",
+            "count": "333",
+            "rate": "90",
+            "img": "static/img/41.png"
+          },
+          {
+            "id": "3",
+            "name": "双拼套餐配烫",
+            "price": "20",
+            "count": "333",
+            "rate": "90",
+            "img": "static/img/41.png"
+          }
+        ]
+      }
+    ]
+  }
+]

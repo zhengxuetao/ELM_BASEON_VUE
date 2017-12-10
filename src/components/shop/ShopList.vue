@@ -82,12 +82,11 @@
         }, 
         created() {
             this.searchKey = this.$route.query.searchKey;
-            this.$store.state.title = '商店列表';
+            this.$store.commit('changeTitle','商店列表');
         },
         beforeDestroy() {
-            this.$store.state.title = '点餐平台';
+            this.$store.commit('changeTitle','点餐平台');
         }
-       
     }
 </script>
 
